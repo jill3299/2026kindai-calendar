@@ -16,22 +16,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
-    padding: 24px 12px 60px;
+    gap: 20px;
+    padding: 16px 8px 60px;
   }
   .cal-month {
-    max-width: 900px;
     width: 100%;
-    overflow-x: auto;
+    max-width: 900px;
+    position: relative;
+    overflow: hidden;
   }
-  .cal-month > div {
-    margin: 0 auto;
+  .cal-inner {
+    display: inline-block;
+    transform-origin: top left;
   }
 </style>
 </head>
 <body>
-<section class="cal-month">
-<div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
+<div class="cal-month"><div class="cal-inner"><div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
 
   <div style="display: flex; align-items: baseline; gap: 4px;">
     <div style="font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; color: #141413; line-height: 1;">2026年9月</div>
@@ -510,9 +511,7 @@
   <div style="display: flex; align-items: center; gap: 7px;"><span style="color: #2E7D46; display: inline-flex;"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.2l7.1-.6L12 2z"></path></svg></span><span style="font-size: 12.5px;">重要行事</span></div>
 </div>
 </div>
-
-</section><section class="cal-month">
-<div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
+</div></div><div class="cal-month"><div class="cal-inner"><div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
 
   <div style="display: flex; align-items: baseline; gap: 4px;">
     <div style="font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; color: #141413; line-height: 1;">2026年10月</div>
@@ -981,9 +980,7 @@
   <div style="display: flex; align-items: center; gap: 7px;"><span style="color: #2E7D46; display: inline-flex;"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.2l7.1-.6L12 2z"></path></svg></span><span style="font-size: 12.5px;">重要行事</span></div>
 </div>
 </div>
-
-</section><section class="cal-month">
-<div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
+</div></div><div class="cal-month"><div class="cal-inner"><div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
 
   <div style="display: flex; align-items: baseline; gap: 4px;">
     <div style="font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; color: #141413; line-height: 1;">2026年11月</div>
@@ -1470,9 +1467,7 @@
   <div style="display: flex; align-items: center; gap: 7px;"><span style="color: #2E7D46; display: inline-flex;"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.2l7.1-.6L12 2z"></path></svg></span><span style="font-size: 12.5px;">重要行事</span></div>
 </div>
 </div>
-
-</section><section class="cal-month">
-<div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
+</div></div><div class="cal-month"><div class="cal-inner"><div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
 
   <div style="display: flex; align-items: baseline; gap: 4px;">
     <div style="font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; color: #141413; line-height: 1;">2026年12月</div>
@@ -1965,9 +1960,7 @@
   <div style="display: flex; align-items: center; gap: 7px;"><span style="color: #2E7D46; display: inline-flex;"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.2l7.1-.6L12 2z"></path></svg></span><span style="font-size: 12.5px;">重要行事</span></div>
 </div>
 </div>
-
-</section><section class="cal-month">
-<div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
+</div></div><div class="cal-month"><div class="cal-inner"><div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
 
   <div style="display: flex; align-items: baseline; gap: 4px;">
     <div style="font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; color: #141413; line-height: 1;">2027年1月</div>
@@ -2460,9 +2453,7 @@
   <div style="display: flex; align-items: center; gap: 7px;"><span style="color: #2E7D46; display: inline-flex;"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.2l7.1-.6L12 2z"></path></svg></span><span style="font-size: 12.5px;">重要行事</span></div>
 </div>
 </div>
-
-</section><section class="cal-month">
-<div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
+</div></div><div class="cal-month"><div class="cal-inner"><div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
 
   <div style="display: flex; align-items: baseline; gap: 4px;">
     <div style="font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; color: #141413; line-height: 1;">2027年2月</div>
@@ -2857,9 +2848,7 @@
   <div style="display: flex; align-items: center; gap: 7px;"><span style="color: #2E7D46; display: inline-flex;"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.2l7.1-.6L12 2z"></path></svg></span><span style="font-size: 12.5px;">重要行事</span></div>
 </div>
 </div>
-
-</section><section class="cal-month">
-<div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
+</div></div><div class="cal-month"><div class="cal-inner"><div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
 
   <div style="display: flex; align-items: baseline; gap: 4px;">
     <div style="font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; color: #141413; line-height: 1;">2027年3月</div>
@@ -3352,9 +3341,7 @@
   <div style="display: flex; align-items: center; gap: 7px;"><span style="color: #2E7D46; display: inline-flex;"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.2l7.1-.6L12 2z"></path></svg></span><span style="font-size: 12.5px;">重要行事</span></div>
 </div>
 </div>
-
-</section><section class="cal-month">
-<div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
+</div></div><div class="cal-month"><div class="cal-inner"><div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
 
   <div style="display: flex; align-items: baseline; gap: 4px;">
     <div style="font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; color: #141413; line-height: 1;">2027年4月</div>
@@ -3809,9 +3796,7 @@
   <div style="display: flex; align-items: center; gap: 7px;"><span style="color: #2E7D46; display: inline-flex;"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.2l7.1-.6L12 2z"></path></svg></span><span style="font-size: 12.5px;">重要行事</span></div>
 </div>
 </div>
-
-</section><section class="cal-month">
-<div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
+</div></div><div class="cal-month"><div class="cal-inner"><div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
 
   <div style="display: flex; align-items: baseline; gap: 4px;">
     <div style="font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; color: #141413; line-height: 1;">2027年5月</div>
@@ -4304,9 +4289,7 @@
   <div style="display: flex; align-items: center; gap: 7px;"><span style="color: #2E7D46; display: inline-flex;"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.2l7.1-.6L12 2z"></path></svg></span><span style="font-size: 12.5px;">重要行事</span></div>
 </div>
 </div>
-
-</section><section class="cal-month">
-<div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
+</div></div><div class="cal-month"><div class="cal-inner"><div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
 
   <div style="display: flex; align-items: baseline; gap: 4px;">
     <div style="font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; color: #141413; line-height: 1;">2027年6月</div>
@@ -4785,9 +4768,7 @@
   <div style="display: flex; align-items: center; gap: 7px;"><span style="color: #2E7D46; display: inline-flex;"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.2l7.1-.6L12 2z"></path></svg></span><span style="font-size: 12.5px;">重要行事</span></div>
 </div>
 </div>
-
-</section><section class="cal-month">
-<div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
+</div></div><div class="cal-month"><div class="cal-inner"><div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
 
   <div style="display: flex; align-items: baseline; gap: 4px;">
     <div style="font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; color: #141413; line-height: 1;">2027年7月</div>
@@ -5288,9 +5269,7 @@
   <div style="display: flex; align-items: center; gap: 7px;"><span style="color: #2E7D46; display: inline-flex;"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.2l7.1-.6L12 2z"></path></svg></span><span style="font-size: 12.5px;">重要行事</span></div>
 </div>
 </div>
-
-</section><section class="cal-month">
-<div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
+</div></div><div class="cal-month"><div class="cal-inner"><div style="width: 900px; height: 1250px; box-sizing: border-box; background: #FAF9F5; font-family: 'Noto Sans JP', sans-serif; color: #141413; padding: 32px; display: flex; flex-direction: column; gap: 14px;">
 
   <div style="display: flex; align-items: baseline; gap: 4px;">
     <div style="font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; color: #141413; line-height: 1;">2027年8月</div>
@@ -5791,7 +5770,24 @@
   <div style="display: flex; align-items: center; gap: 7px;"><span style="color: #2E7D46; display: inline-flex;"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.2l7.1-.6L12 2z"></path></svg></span><span style="font-size: 12.5px;">重要行事</span></div>
 </div>
 </div>
-
-</section>
+</div></div>
+<script>
+function scaleAll() {
+  var pad = 16; // matches body horizontal padding (8px * 2)
+  var target = document.documentElement.clientWidth - pad;
+  document.querySelectorAll('.cal-month').forEach(function(month) {
+    var inner = month.querySelector('.cal-inner');
+    inner.style.transform = 'scale(1)';
+    var naturalWidth = inner.offsetWidth;
+    var naturalHeight = inner.offsetHeight;
+    var scale = Math.min(1, target / naturalWidth);
+    inner.style.transform = 'scale(' + scale + ')';
+    month.style.height = (naturalHeight * scale) + 'px';
+  });
+}
+window.addEventListener('load', scaleAll);
+window.addEventListener('resize', scaleAll);
+scaleAll();
+</script>
 </body>
 </html>
